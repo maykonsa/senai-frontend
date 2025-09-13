@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    background: url(imagem/clarice-lispector-plano-de-fundo.jpg) center no-repeat fixed; 
+    background-size: cover; /* ajustar a imagem à tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+}
+
+
+.vidro {
+
+    width: 80rem;
+    height: 20rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4); /* cor de fundo com opacidade reduzidada */
+    border: 0.1rem inset  rgba(36, 36, 36, 0.500);
+    backdrop-filter: blur(0.8rem);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden; /* oculta tudo que está fora do container, nesse caso o texto. */
+}
+
+.vidro h1{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.vidro p, i {
+    font-size: 2rem;
+    font-family: 'Gentium Book Plus';
+
+    
+}
+
+.texto {
+    padding: 3rem;
+    position: relative;
+    top: 20rem;
+    color: rgb(255, 174, 0);
+}
+
+.vidro:hover .texto {   /* acionando .text quando der um hover no container (.vidro) */
+    top: 0rem;
+    color: white;
+    transition: calc(1s);
+}

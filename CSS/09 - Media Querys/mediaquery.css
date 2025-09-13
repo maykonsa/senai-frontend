@@ -1,0 +1,363 @@
+body { background-color: rgb(248, 248, 245);
+    font-size: 20px; /* comentário no css */
+    margin: 0;
+
+}
+
+/*HEADER*/
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    margin: 0 5%;
+    padding: 0.5% 0 0.5% 65%;
+    border-bottom: 8px solid #ff6600;
+}
+
+.link {
+    font-size: 25px;
+    padding: 5px 27px; /* valor vertical e horizontal dos "botões" do header.*/
+    background-color: #009bc2;
+    text-decoration: none;
+    color: #ffffff;
+} /* como é um class, é .(nome) */
+
+.senai {
+    background-color:#c33d3d;
+}
+
+.fiesp {
+    background-color: #000000bd;
+
+}
+
+/*BODY*/
+
+main {
+    background-color: #ffffff;
+    margin: 0 5%;
+    padding: 1% 0% 5% 2%
+
+}
+
+span {
+    color: #009bc2;
+}
+
+h1 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 46px;
+    color: #009bc2;
+    text-shadow: 2px 2px 2px grey; /* x, y, progessão da sombra (discipação)/*
+    /*também existe (box-shadow) para sombrear caixas */
+
+}
+
+h2, h3 {
+    font-family: 'Times New Roman', Times, serif; /* ( ' nome da fonte' prioriza a fonte dentre as outras ) */
+    font-weight: 900; /*  (font-weight) muda o peso da fonte, 100 - 900 e lighter para bolder*/
+    color: #ff6600;
+    margin-top: 80px;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font: 27px;
+}
+
+p {
+    padding: 0 10% 0 1%;
+}
+
+
+
+.imgredes {
+    box-shadow: none;
+}
+
+.h3contato {
+    color:white;
+    margin-top: 10px;
+    
+}
+
+.pai {
+    width: 60%;
+    height: 100px;
+    background: #7c7c7c;
+
+}
+
+.bloco div {
+    display: block; /* o block considera os elementos como blocos verticais */
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    background:#00ff22
+}
+
+.emLinha div {
+    display: inline; /* Inline coloca os elementos na mesma linha. Não se tem ajuste de largura e altura nessa opção */
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px 25px;
+    text-align: center;
+    background:#00ff22; 
+    position: relative;
+    top: 40px;
+
+}
+
+.blocoEmLinha div {
+    display: inline-block; /* Inline-block consegue colocar elementos na mesma linha e mudar sua altura e largura. */
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    background:#00ff22;
+
+}
+
+footer {
+    background: red;
+    width: 100vw;
+}
+
+.redes {
+    display: inline-block;
+    margin-left: 45%;
+}
+
+.contato {
+    margin-left: 35%
+}
+
+.contato span {
+ color: rgb(40, 40, 121);
+}   
+
+.contato p {
+ color: rgb(255, 255, 255);
+ font-weight: 100;
+}
+
+
+.info {
+    position: relative;
+    left: -25%;
+    width: 200px;
+     
+}
+
+.info2 {
+    position: absolute;
+    right: 20%;
+    bottom: -65%;
+
+     
+}
+
+.direitos {
+    position: relative;
+    left: 40%;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+
+}
+
+.grade {
+    border-left: 5px solid orange;
+    background-color: black;
+    color: white;
+    width: 85vw;
+    height: 140px;
+    margin-bottom: 70px;
+    margin-left: 3%;
+    padding-top: 25px;
+    border-radius: 7px;
+    overflow: scroll;
+
+}
+
+
+.seletor { 
+    color: rgb(199, 0, 218);
+}
+
+.condicao {
+    color: rgb(0, 167, 173);
+
+}
+
+.tamanhotexto {
+    color: #c33d3d;
+}
+
+.tamanhonumero {
+    color: #3dc396;
+}
+
+.anotacao {
+    color: rgb(0, 112, 0);
+}
+
+.cabecalho {
+    width: 100%;
+    height: 400px;
+    background: url(Imagens/cropped-media-query-e-breakpoints.webp) center;
+}
+
+.cabecalho_blur{
+
+    width: 95.2%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 2.5rem;
+    backdrop-filter: blur(.2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+
+.cabecalho h1 {
+    color: white;
+    font-family: 'Consolas';
+    font-size: 65px;
+    padding-left: 10%;
+
+    
+    
+}
+
+.cabecalho p {
+    font-family: 'Consolas';
+    font-size: 21px;
+    padding-left: 13%;
+    margin-top: -35px;
+    
+
+    
+}
+
+.cabecalho .senainome {
+    font-family: 'Consolas';
+    font-size: 21px;
+    padding-left: 13%;
+    margin-top: 10px;
+}
+
+
+/* Lógica and: é obrigatório aquela definição. Lógica or: aceita quais quer das variações dentre as definições apresentadas. */
+
+/* CSS para smarthphones pequenos */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: 62.5%;
+    }
+
+    body {
+        background-color: #ffffff;
+    }
+
+    header {
+        padding: 0;
+        margin: 9;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+.cabecalho {
+        width: 90vw;
+}
+
+.cabecalho h1 {
+    color: white;
+    font-family: 'Consolas';
+    font-size: 35px;
+    padding-left: 10%;
+
+    
+    
+}
+
+.cabecalho p {
+    font-family: 'Consolas';
+    font-size: 16px;
+    padding-left: 10%;
+    margin-top: 10px;
+    
+
+    
+}
+
+.cabecalho .senainome {
+    font-family: 'Consolas';
+    font-size: 10px;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+
+
+    main { 
+        
+        
+    }
+
+     h1 {
+           font-size:30px ;
+    }
+
+     h2 {
+           font-size:20px ;
+    }
+
+    h3 {
+           font-size:16px ;
+    }
+
+    p {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .grade {
+        padding: 0px;
+        margin: 0;
+        
+    }
+
+    code {
+        font-size: 10px;
+    }
+
+    .grade span {
+       font-size: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+

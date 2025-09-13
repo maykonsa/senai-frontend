@@ -19,19 +19,22 @@ body {
 
 
 .card {
-    width: 8rem;
-    height: 10rem;
+    width: 14rem;
+    height: 20rem;
     color: white;
     background: rgba(255, 255, 255, 0.2); /* cor de fundo com opacidade reduzidada */
     backdrop-filter: blur(0.1rem);
+    overflow: hidden;
 }
 
-.card span:nth-of-type(1) {
-    width: 100%;
-    height: 1rem;
-    background: linear-gradient(to right, transparent,  rgb(100, 69, 34));
-    position: absolute;
-    top: 0;
+.card span:nth-of-type(1) { /* seleciona um elemento especifico de acordo com a ordem da sua linha no html. por exemplo, esse é o span 1*/
+    width: 100%; /*100% do card horizontalmente*/
+    height: 1rem; /* 10 pixels de altura */
+    background: linear-gradient(to right, transparent,  rgb(236, 129, 7)); /*gradient pra direita*/
+    position: absolute; 
+    top: 0; /*posição do span (borda)*/
+    animation: spantop 2s linear infinite;
+    
 
     
     
@@ -41,27 +44,80 @@ body {
     
     width: 1rem;
     height: 100%;
-    background: linear-gradient(to bottom, transparent,  rgb(100, 69, 34));
+    background: linear-gradient(to bottom, transparent,  rgb(236, 129, 7));
     position: absolute;
     right: 0;
+    animation: spanright 2s linear infinite;
+    animation-delay: 1s;
 }
 
 .card span:nth-of-type(3) {
     
     width: 1rem;
     height: 100%;
-    background: linear-gradient(to bottom, transparent,  rgb(100, 69, 34));
+    background: linear-gradient(to top, transparent,  rgb(236, 129, 7));
     position: absolute;
     left: 0;
+
+    animation: spanleft 2s linear infinite;
+    animation-delay: 1s;
+
 }
 
 .card span:nth-of-type(4) {
     width: 100%;
     height: 1rem;
-    background: linear-gradient(to right, transparent,  rgb(100, 69, 34));
+    background: linear-gradient(to right, transparent,  rgb(236, 129, 7));
     position: absolute;
     bottom: 0;
 
+    animation: spanbottom 2s linear infinite;
     
     
+}
+
+
+
+
+
+/* animação das bordas */
+
+@keyframes spantop { /* "spantop" corresponde uma classe ao keyfrmae */
+    
+    0% { transform:translateX(-100%);
+    }
+
+    100% { transform:translateX(100%);
+    }
+
+}
+
+@keyframes spanright { 
+    
+    0% { transform:translateY(-100%);
+    }
+
+    100% { transform:translateY(100%);
+    }
+
+}
+
+@keyframes spanbottom {
+    0% { transform: translateX(100%);
+    }
+    
+    100% { transform: translateX(-100%);
+
+    }
+
+}
+
+@keyframes spanleft {
+    0% { transform: translateY(100%);
+    }
+    
+    100% { transform: translateY(-100%);
+
+    }
+
 }

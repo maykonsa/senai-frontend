@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(Imagens/djavan-plano-de-fundo.jpg) fixed no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 20rem;
+    height: 28rem;
+
+    background: rgba(54, 54, 54, 0.295);
+    backdrop-filter: blur(0.1rem);
+}
+
+.cards span:nth-last-of-type(1) {
+    height: 100%;
+    width: 1rem;
+    background: linear-gradient( to bottom, yellow, transparent);
+    position: absolute;
+    left: 0;
+}
+
+.cards span:nth-last-of-type(2) {
+    height: 100%;
+    width: 1rem;
+    background: linear-gradient( to top, yellow, transparent);
+    position: absolute;
+    right: 0;
+}
+
+.cards span:nth-last-of-type(3) {
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient( to right, yellow, transparent);
+    position: absolute;
+    top: 0;
+}
+
+.cards span:nth-last-of-type(4) {
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient( to left, yellow, transparent);
+    position: absolute;
+    bottom: 0;
+}
