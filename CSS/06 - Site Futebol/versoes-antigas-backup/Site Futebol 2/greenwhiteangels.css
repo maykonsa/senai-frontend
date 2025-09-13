@@ -10,11 +10,12 @@
     font-family: 'Anaheim';
 }
 
-
 body {
     color: white;
     background: rgb(22, 22, 22);
+
 }
+
 .menu {
     width: 100%;
     height: 72px;
@@ -384,7 +385,7 @@ body {
 
 .produtopadrao h4 {
     text-align: left;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -489,7 +490,7 @@ body {
 
 .rodape_divisor {
     position: absolute;
-    top: 95%;
+    top: 600%;
     background:#156300;
     width: 100%;
     height: 144px;
@@ -506,7 +507,7 @@ body {
 
 .rodape_informacoes {
     position: absolute;
-    top: 111%;
+    top: 616%;
     background:#115000;
     width: 100%;
     height: 392px;
@@ -615,110 +616,42 @@ body {
 }
 
 
+@media print {
+
+header { 
+        display: none;
+    }
 
 
-.area_jogadoras {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.campo {
-  background-image: url('campo_futebol.png');
-  background-size: cover;
-  width: 409px;
-  height: 578px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-figcaption {
-  margin-top: 4px;
-  font-size: 10px; 
-  color: white;
-  background-color: rgb(2, 190, 2);
-  padding: 2px 4px;
-  border-radius: 2px;
-  font-weight: bold;
-  
-}
-
-figcaption span{
-  margin-top: 4px;
-  font-size: 10px; 
-  color: white;
-  background-color: #156300;
-  padding: 2px 4px;
-  margin-left: -4px;
-  font-weight: bold;
-  background-color: #156300;
- 
-  
-}
-
-.linha {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-  top: 30px;
-  
-}
-
-
-.jogadorescalacao {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.linha-zagueiras {
-    position: relative;
-    top: 40px;
-}
-
-.linha-meio-campistas {
-    position: relative;
-    top: 100px;
-}
-
-.linha-atacantes {
-    position: relative;
-    top: 170px;
-}
-
-.jogadorescalacao img {
-  width: 64px;
-}
-
-.reservas{
-    list-style: none;
-    position: relative;
-    bottom: 350px;
-    left: 300px;
-}
-
-.reservas li{
-    list-style: none;
-}
-
-.jogadoras h3{
-    margin-top: 20px;
-}
-
-.titulo_escalacao {
-    position: relative;
-    top: 140px;
+h1 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;  
+    padding-top: 6rem;
     text-align: center;
-    font-size: 40px;
+}
 
-}   
+h2, h3 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-top: 6rem;
+    text-align: center;
+}
 
+p {
+    line-height: 4rem; 
+}
 
+h4 {
+    line-height: 3rem; 
+}
+
+}
+
+@media screen and (max-width: 480px) {
+        
+}
 
 
 

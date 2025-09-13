@@ -1,0 +1,20 @@
+variáveis: parte básica e fundamental no contexto da programação, pois são elas que possibilitam armazenar um conteúdo para ser trabalhado dentro do algoritmo. Elas armazenam diferentes tipos de dados (números, textos e boleanos). Ou seja, basicamente é um local nomeado para armazenar um valor. 
+
+Declaração de uma variável:
+
+	       var identificador = valor
+exemplo:       var n1 = 5.50
+
+Indentificadores devem:
+	*começar com letra, $ ou _
+	*não podem começar com números
+	*podem conter letras e números juntos
+	*utitilizar tanto acentos quanto símbolos
+	*não podem conter espaços
+	*não podem ser "palavras reservadas"
+
+
+
+
+
+
