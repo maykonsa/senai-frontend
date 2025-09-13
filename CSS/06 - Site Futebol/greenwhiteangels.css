@@ -101,14 +101,12 @@ body {
     height: 80vh;
     background: url(imagens/foto_principal.png) center no-repeat;
     background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .inicio {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -336,31 +334,19 @@ body {
     width: 100%;
     margin-top: 10rem;
     color: white;
-    gap: 1rem;
 }
 
-.campeonato_temporada{
-     width: 100%;
-}
-
-.classificacao .campeonato_temporada{
+.campeonato_temporada_classificacao{
     font-size: 2rem;
-
-    
-}
-
-.classificacao .campeonato_temporada h4{
-    font-size: 2rem;
-    
 
 }
 
 .wolfs_colocacao{
+    width: 30rem;
     display:flex;
     gap: 1rem;
     align-items:center;
     justify-content: center;
-    width: 100%;
 
 }
 
@@ -510,7 +496,6 @@ body {
 
 
 
-
 .campeonato1 {
     background: rgba(0, 0, 0, 0.267);
     width: 40rem;
@@ -591,7 +576,7 @@ body {
 
 .texto_historia {
   width: 40%;  
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
