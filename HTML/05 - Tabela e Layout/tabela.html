@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas básicas</title>
+</head>
+<body>
+    <h1 align="center">Oque são as tabelas?</h1>
+    <p>
+        As tabela ssão listas de dados em duas dimensões e compostas por linnhas e colunas. Portando, são muito utilizados para apresentar dados de uma forma objetiva e ogranizada.
+    </p>
+
+    <center>
+        <figure><img src="imagens/tabela - conceito.webp" alt="tabela"> <figcaption>Estrutura de uma tabela</figcaption></figure>
+    </center>
+
+    <!-- figure ajuda o navegador a identificar um imagem como imagem e o SEO do Google pode rankear e mostra-lo na aba de imagens-->
+
+    <!-- <figcaption> para adicionar uma legenda na imagem-->
+
+    <!-- Center é uma tag obsoleta usada para centralizar (não use)-->
+
+    <p> 
+        Conforme a imagem acima, podemos observar a estrutura básica de uma tabela. Desta forma, é importante saber que cada elemento de uma tabela é chamada de "célula". Vemos abaixo um exemplo de tabela com nove células (organizada em três colunas e três linhas):
+    </p>
+
+    <table border="10" align="center" width="40%" height="140">  <!--<table> Criação de tabela-->
+        <tr height="50%"> <!-- <tr> Criação de linha-->
+            <th>Nome</th> 
+            <th>Idade</th> <!-- <th> Células de cabeçalho-->
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Laurete</td>
+            <td>80</td>
+            <td>Pedreira</td>
+        </tr>
+        <tr>
+            <td>John Wick</td>
+            <td>30</td>
+            <td>Espião</td>
+        </tr>
+    </table>
+
+    <!-- width="%" serve para mudar o tamanho de forma responsiva em diferentes dispositivos, o tamanho se adequara de acordo com a porcentagem-->
+
+
+        <table border="10" align="center" width="40%" height="140">  
+        <tr style="background-color: rgb(52, 190, 52); color: rgb(255, 255, 255);height: 50%;"> 
+            <th>Descrição</th> 
+            <th colspan="2">Descrição</th> <!-- Célula mesclada--> 
+        </tr>
+        <tr>
+            <td>Laurete</td>
+            <td>80</td>
+            <td>Pedreira</td>
+        </tr>
+        <tr>
+            <td>John Wick</td>
+            <td>30</td>
+            <td>Espião</td>
+        </tr>
+    </table>
+    
+    <br><br>
+
+    <h2>Tabela com Layout</h2>
+    <p>
+        Além da utilização padrão para uma tabela, também podemos aplicá-la na organização de conteúdo de uma página (como layout), desta forma, mesmo com poucas aulas e com o conhecimento ainda em desenvolvimento, conseguiremos trabalhar um elemento ao lado de outro elemento na mesma página. Segue exemplo abaixo:
+    </p>
+
+    <table>
+        <tr>
+            <td>
+                <figure>
+                    <img src="imagens/conteudo.webp" alt="conteúdo" width="400">
+                </figure></td>
+            <td><p>Conteúdo</p></td>
+        </tr>
+    </table> 
+
+    <!-- Você pode utilizar as tabelas para inserir esse conteúdo de forma horizontal, mas é obsoleto-->
+   
+
+</body>
+</html>

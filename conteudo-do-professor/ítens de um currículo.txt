@@ -1,0 +1,33 @@
+currículo: documento utilizado para descrever o perfil profissional.
+
+*************************************************
+
+
+*dados pessoais (Nome completo, endereço, telefones (2x), email (formal), nacionalidade, estado civil, idade)
+
+*Objetivo (Jovem aprendiz, estágio, assistente ou auxiliar)
+
+*Escolaridade (Nome completo da escola, ano que está cursando)
+
+*Cursos extracurrículares (Nome da escola, título do curso, duração)
+
+*Resumo de qualificações (lista de conhecimentos):
+	- conhecimento em s.o. (windows 10)
+	- criação de documentos prof (word 2013)
+	- elaboração de planilhas elet (excel 2013)
+
+*Experiência (nome da empresa, cargo exercido e período trabalhado)
+
+*Perfil profissional (breve carta de apresentação sobre que é você profissionalmente)
+
+
+
+sites:
+	infojobs
+	vagas.com
+	empregos.com
+	indeed
+	nube
+	ciee
+
+app linkedin

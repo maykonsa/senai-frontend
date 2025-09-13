@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.caixa { /*Padrão para todos os Containers*/
+    font-size: 3rem; /* 2,5X o tamanho definido pelo navegador 62.5% = 10px */
+    width: 35vw; /* viewport (tamanho da janela) horizontal */
+    height: 15vh;  /* viewport (tamanho da janela) vertical */
+    background: purple;
+    border-radius: 1.5rem;
+    margin: 10rem 0 0 5rem;
+}
+
+.caixa div { /*Padrão para todos os Items*/
+    width: 25%;
+    border:  0.1rem solid black;
+    background-color: yellow;
+}
+
+.direcao {
+    display: flex;
+    flex-direction:row; /* direção horizontal  também temos row reverse, column, column reverse. */
+    justify-content: center; /* alinhamento vertical ou horizontal (muda dependendo ser row ou column) */
+    align-items: center; /* alinhamento vertical ou horizontal (muda dependendo ser row ou column) */
+    gap: 3rem; /* espaçamento entre itens */
+    
+}
+
+.quebra {
+    display: flex;
+    flex-wrap: wrap; /* permite quebra de linhas através flex */
+} 

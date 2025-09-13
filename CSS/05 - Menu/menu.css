@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+* {
+    padding: 0;         /* Para zerar o estilo da página, aqui ela está "crua"   */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 200px;
+    position: relative;
+
+}
+
+header::before { /* o "::before"  chama um pseudo-elemento, nesse caso, ele vem antes do header.  */
+    content:""; /* gerando o conteúdo do pseudo-elemento */
+    position: absolute;
+    inset: 0; /* com isso TOP, RIGHT, BOTTOM E LEFT tem o mesmo valor */
+    background: url(imagens/banner_sp.jpg) center;
+    background-size: cover; /* comando para esticar a imagem e preencher todo o espaço pré-definido */
+    opacity: calc(0.5);  
+    
+}
+
+.menu {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 0;
+    font-family: 'Special Elite';
+}
+
+.menu ul li {
+    display: inline-block; /* coloca os itens do menu em linha */
+    padding-left: 50px;
+    padding: 13px 80px;
+    list-style: none; /* tira as bolinhas das listas */
+}
+
+.menu ul {
+    position: absolute;
+    left: 40%;
+
+}
+
+
+.menu a figure img {
+    height: 90px;
+    position: absolute;
+    top: -60%;
+    left: 10%;
+    
+
+}   
+
+.menu ul li:hover { /*  :hover insere o hover */
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    border-bottom: 4px solid red;
+    padding: 13px 80px;
+    cursor: pointer; /* muda o ponteiro do mouse para um que aponta */
+    transition: 0.8s; /* transição "animada" para dar suavidade */
+    transform: scale(1.1); /* da um leve zoom */
+    /* font-size: 25px; é capaz fazer a animação de zoom com isso, mas eu não curti o resultado */
+
+}
+

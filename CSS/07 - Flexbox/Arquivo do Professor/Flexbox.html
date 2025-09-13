@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Flexbox.css">
+    <title>Explicação - Flexbox</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="link sesi"
+              ><a href="https://www.sesisp.org.br" target="_blank">SESI-SP</a></span
+            >
+            <span class="link senai"
+              ><a href="https://www.sp.senai.br" target="_blank">SENAI-SP</a></span
+            >
+            <span class="link fiesp"
+              ><a href="https://www.fiesp.com.br" target="_blank">FIESP</a></span
+            >
+          </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>FLEXBOX</h1>
+            <p>
+                Recurso muito utilizado no CSS moderno, que visa facilitar no posicionamento de elementos de uma página HTML. A meta desse recurso é ser um modo mais eficiente para a criação de Layouts, alinhamento e distribuição de espaços entre itens (em um container).
+            </p>
+
+            <h2>Exemplos:</h2>
+        </article>
+
+        <!-- Direção do FLEXBOX -->
+        <section class="direção">
+            <details>
+                <summary>Flex-direction</summary>
+                <div class="container direction">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Alinhamentos HORIZONTAIS -->
+        <section class="justify_content">
+            <details>
+                <summary>Justify-content (alinhamento horizontal)</summary>
+                <details>
+                    <summary>flex-start</summary>
+                    <div class="container start">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>flex-end</summary>
+                    <div class="container end">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>center</summary>
+                    <div class="container center">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>space-between</summary>
+                    <div class="container between">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>space-around</summary>
+                    <div class="container around">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>space-evenly</summary>
+                    <div class="container evenly">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+            </details>
+        </section>
+
+        <!-- Alinhamentos VERTICAIS -->
+        <section class="align_items">
+            <details>
+                <summary>Align-Items (alinhamento vertical)</summary>
+                <details>
+                    <summary>flex-start</summary>
+                    <div class="container startV">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>flex-end</summary>
+                    <div class="container endV">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>center</summary>
+                    <div class="container centerV">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>stretch</summary>
+                    <div class="container stretch">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </details>
+                <details>
+                    <summary>baseline</summary>
+                    <div class="container baseline">
+                        <div style="height: 8.5rem; display: flex; align-items: flex-end;">1</div>
+                        <div style="height: 10rem; display: flex; align-items: center;">2</div>
+                        <div style="height: 16.5rem; display: flex; align-items: flex-end;">3</div>
+                        <div style="height: 12rem; display: flex; align-items: flex-start;">4</div>
+                    </div>
+                </details>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="redes">
+            <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="Imagens/Redes Sociais/face.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fsenai.sp%2F&source=omni_redirect" target="_blank"><img src="Imagens/Redes Sociais/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.youtube.com/channel/UCaz1BMUVug86pd_uS598X1A" target="_blank"><img src="Imagens/Redes Sociais/youtube.png" alt="YouTube" /></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsenaisaopaulo" target="_blank"><img src="Imagens/Redes Sociais/twitter.png" alt="Twitter" /></a>
+            <a href="https://br.linkedin.com/school/senaisp/" target="_blank"><img src="Imagens/Redes Sociais/linkedin.png" alt="Linkedin" /></a>
+            <a href="https://api.whatsapp.com/send?phone=551133220050" target="_blank"><img src="Imagens/Redes Sociais/whatsapp.png" alt="WhatsApp" /></a>
+          </nav>
+          <section class="contato">
+            <p>
+              <span class="titulo">SENAI Tatuapé - "Frederico Jacob"</span> <br>
+              rua São Jorge, 634 - Tatuapé - São Paulo/SP | CEP 03087-000
+            </p>
+              <p>
+                <span class="titulo">CENTRAL DE RELACIONAMENTO</span> <br>
+                (11) 2227-8020 (Telefone/WhatsApp) <br>
+                senaimanutencao@sp.senai.br
+              </p>
+          </section>
+          <section class="direitos">
+            <p>
+              Copyright 2025 © Todos os direitos reservados.
+            </p>
+          </section>
+    </footer>
+</body>
+</html>

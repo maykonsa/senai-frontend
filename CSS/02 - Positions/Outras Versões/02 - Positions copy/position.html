@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="position.css">
+    <title>Positions</title>
+  </head>
+  <body>
+
+
+        <header>
+          <nav>
+            <span class="link sesi"
+              ><a href="https://www.sesisp.org.br" target="_blank">SESI-SP</a></span
+            >
+            <span class="link senai"
+              ><a href="https://www.sp.senai.br" target="_blank">SENAI-SP</a></span
+            >
+            <span class="link fiesp"
+              ><a href="https://www.fiesp.com.br" target="_blank">FIESP</a></span
+            >
+          </nav>
+        </header>
+
+        <main>
+          <article>
+            <h1>POSITIONS</h1>
+            <p>
+              No que diz respeito a controle de posições dos elementos HTML, existem
+              várias formas para alcançar tal resultado (positions, display, float),
+              hoje iremos abordar sobre as variações da propriedade position.
+            </p>
+            <p>
+              Position é um módulo do CSS que define como ficam as posições dos
+              elementos relativos e absolutos da página, fazendo referência aos valores
+              atribuídos quanto ao top, bottom, right e left. Esta propriedade funciona
+              perfeitamente nos navegadores desde a versão 2.1 do CSS, onde o seu foco é
+              apenas o de posicionar <strong>pequenos</strong> detalhes do layout (para
+              diagramar utilize Flexbox e Grid).
+            </p>
+            <p>
+              A propriedade em questão pode assumir 5 valores diferentes: Static,
+              Relative, Absolute, Fixed e Sticky. Segue explicação de cada uma:
+            </p>
+          </article>
+          <section class="static">
+            <h2>CSS Position Static:</h2>
+            <p>
+              Esse é o valor default de todo elemento HTML, ou seja, ele vai seguir o
+              fluxo comum da sua página. Para declará-lo faça:
+            </p>
+               <pre>
+                 <code  class=grade>
+                   <span class="seletor">Seletor</span> {
+                       <span class="propriedade">position:</span> static;
+                   }
+                 </code>
+               </pre>
+          </section>
+          <section class="relative">
+            <h2>CSS Position Relative</h2>
+            <p>
+              Utilizando o position Relative o elemento passa a aceitar as propriedades
+              Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do
+              elemento. Ex:
+            </p>
+            <p>HTML:</p>
+                    <pre>
+                      <code class="grade">
+                        &lt;<span class="tag">div</span>&gt;
+                            &lt;<span class="tag">h1</span>&gt;Sou um h1&lt;<span class="tag">/h1</span>&gt;
+                            &lt;<span class="tag">h2</span>&gt;Sou um h2&lt;<span class="tag">/h2</span>&gt;
+                        &lt;<span class="tag">/div</span>&gt;
+                      </code>
+                    </pre>
+            <p>CSS:</p>
+                    <pre>
+                      <code class=grade>
+                        <span class="seletor">div</span> { <span class="propriedade">background:</span> #eee; <span class="propriedade">margin:</span> 200px 200px; <span class="propriedade">width:</span> 300px; <span class="propriedade">height:</span> 300px; }
+                        <span class="seletor">h1</span> { <span class="propriedade">position:</span> relative; <span class="propriedade">top:</span> 20px; <span class="propriedade">left:</span> 20px; }
+                        <span class="seletor">h2</span> { <span class="propriedade">top:</span> 20px; <span class="propriedade">left:</span> 20px; }
+                      </code>
+                    </pre>
+          </section>
+          <section class="absolute">
+            <h2>CSS Position Absolute</h2>
+            <p>
+              O position Absolute é um grande quebra galho no
+              <strong><ins>CSS</ins></strong
+              >. Com ele você pode posicionar qualquer elemento de acordo com o elemento
+              pai que tenha um position diferente de static.
+            </p>
+                    <pre>
+                      <code class=grade>
+                        &lt;<span class="tag">div</span>&gt;
+                            &lt;<span class="tag">h1</span>&gt;
+                                &lt;<span class="tag">span</span>&gt;&lt;<span class="tag">/span</span>&gt;
+                            &lt;<span class="tag">/h1</span>&gt;
+                            &lt;<span class="tag">p</span>&gt;&lt;<span class="tag">/p</span>&gt;
+                        &lt;<span class="tag">/div</span>&gt;
+                      </code>
+                    </pre>
+            <p>
+              O elemento DIV é pai dos elementos H1, P e SPAN. Os elementos H1, P e SPAN
+              são filhos do elemento DIV. Os elementos H1 e P são irmãos por estarem no
+              mesmo nível. E o elemento SPAN é filho do elemento H1 e também do elemento
+              DIV.
+            </p>
+            <p>HTML:</p>
+                    <pre>
+                      <code class=grade>
+                        &lt;<span class="tag">div</span>&gt;
+                            &lt;<span class="tag">h1</span>&gt;Sou um h1&lt;<span class="tag">/h1</span>&gt;
+                            &lt;<span class="tag">h2</span>&gt;Sou um h2&lt;<span class="tag">/h2</span>&gt;
+                        &lt;<span class="tag">/div</span>&gt;
+                      </code>
+                    </pre>
+            <p>CSS:</p>
+                    <pre>
+                      <code class=grade>
+                        <span class="seletor">div</span> { <span class="propriedade">background:</span> #eee; <span class="propriedade">margin:</span> 50px; <span class="propriedade">width:</span> 300px; <span class="propriedade">height:</span> 300px; <span class="propriedade">position:</span> relative;}
+                        <span class="seletor">h1</span> { <span class="propriedade">position:</span> absolute; <span class="propriedade">top:</span> 20px; <span class="propriedade">left:</span> 20px; <span class="propriedade">outline:</span> 1px solid #444; }
+                        <span class="seletor">h2</span> { <span class="propriedade">outline:</span> 1px solid #f90; }
+                      </code>
+                    </pre>
+            <p>
+              Observação: podemos utilizar tanto medidas positivas quanto
+              <strong>negativas</strong>, e assim, posicionar os elementos em locais que
+              antes seriam impossíveis de serem alcançados.
+            </p>
+          </section>
+          <section class="fixed">
+            <h2>CSS Position Fixed:</h2>
+            <p>
+              O position fixed se comporta de maneira semelhante ao absolute, deixando
+              de fazer parte do fluxo comum da página. Porém a grande diferença dele é
+              que ele passa a se referenciar ao window do seu navegador, ou seja, a área
+              que aparece para o usuário independente de barra de rolagem.
+            </p>
+            <p>HTML:</p>
+                    <pre>
+                      code class=grade>
+                        &lt;<span class="tag">div</span>&gt;
+                            &lt;<span class="tag">h1</span>&gt;Sou um h1&lt;<span class="tag">/h1</span>&gt;
+                            &lt;<span class="tag">h2</span>&gt;Sou um h2&lt;<span class="tag">/h2</span>&gt;
+                        &lt;<span class="tag">/div</span>&gt;
+                      </code>
+                    </pre>
+            <p>CSS:</p>
+                    <pre>
+                      <code class=grade>
+                    <span class="seletor">body</span> { <span class="propriedade">background:</span> #000; }
+                    <span class="seletor">div</span> { <span class="propriedade">background:</span> #f90; <span class="propriedade">width:</span> 300px; <span class="propriedade">height:</span> 1500px; <span class="propriedade">position:</span> relative; }
+                    <span class="seletor">h1</span> { <span class="propriedade">position:</span> fixed; <span class="propriedade">top:</span> 0; <span class="propriedade">left:</span> 20px; <span class="propriedade">right:</span> 20px; <span class="propriedade">outline:</span> 1px solid #444; <span class="propriedade">background:</span> #fff;  }
+                    <span class="seletor">h2</span> { <span class="propriedade">position:</span> fixed; <span class="propriedade">bottom:</span> 0; <span class="propriedade">left:</span> 20px; <span class="propriedade">right:</span> 20px; <span class="propriedade">outline:</span> 1px solid #444; <span class="propriedade">background:</span> #fff;}
+                      </code>
+                    </pre>
+          </section>
+        </main>
+
+
+        <footer>
+          <section class="redes">
+            <nav>
+              <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="Imagens/redes_sociais/face.png" alt="Facebook" /></a>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Fsenai.sp%2F&source=omni_redirect" target="_blank"><img src="Imagens/redes_sociais/instagram.png" alt="Instagram" /></a>
+              <a href="https://www.youtube.com/channel/UCaz1BMUVug86pd_uS598X1A" target="_blank"><img src="Imagens/redes_sociais/youtube.png" alt="YouTube" /></a>
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsenaisaopaulo" target="_blank"><img src="Imagens/redes_sociais/twitter.png" alt="Twitter" /></a>
+              <a href="https://br.linkedin.com/school/senaisp/" target="_blank"><img src="Imagens/redes_sociais/linkedin.png" alt="Linkedin" /></a>
+              <a href="https://api.whatsapp.com/send?phone=551133220050" target="_blank"><img src="Imagens/redes_sociais/whatsapp.png" alt="WhatsApp" /></a>
+            </nav>
+          </section>
+          <section class="contatos">
+            <p>
+              <span class="titulo">SENAI Tatuapé - "Frederico Jacob"</span> <br>
+              rua São Jorge, 634 - Tatuapé - São Paulo/SP | CEP 03087-000
+            </p>
+              <p>
+                <span class="titulo">CENTRAL DE RELACIONAMENTO</span> <br>
+                (11) 2227-8020 (Telefone/WhatsApp) <br>
+                senaimanutencao@sp.senai.br
+              </p>
+          </section>
+          <section class="copyright">
+            <p>
+              Copyright 2025 © Todos os direitos reservados.
+            </p>
+          </section>
+        </footer>
+
+  </body>
+</html>

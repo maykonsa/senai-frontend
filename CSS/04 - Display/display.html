@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Display</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="link sesi"
+              ><a href="https://www.sesisp.org.br" target="_blank">SESI-SP</a></span
+            >
+            <span class="link senai"
+              ><a href="https://www.sp.senai.br" target="_blank">SENAI-SP</a></span
+            >
+            <span class="link fiesp"
+              ><a href="https://www.fiesp.com.br" target="_blank">FIESP</a></span
+            >
+          </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>CSS DISPLAY</h1>
+            <p>
+                O <span>CSS Display</span> é uma propriedade utilizada para indicar a forma como os elementos HTML serão dispostos na página ou em espaços delimitados. Justamente por essas características, ele se torna um recurso essencial para manter a organização dos elementos da página.
+            </p>
+
+            <h2>Propriedades Display</h2>
+            <p>
+                A propriedade "Display" possui inúmeras variações, porém neste primeiro momento iremos trabalhar com apenas as três mais básicas (utilizadas para controlar os tipos de elementos):
+            </p>
+
+            <ul>
+                <li><span>Block:</span> elemento em bloco. Este ocupa 100% da largura disponível e sempre será iniciado em uma nova linha. Exemplo: Títulos (h1 ao h6), Divs, parágrafos...;</li>
+                <li><span>Inline:</span> elemento em linha. Ocupa apenas o espaço necessário para exibir o seu conteúdo. Exemplo: Links e Imagens;</li>
+                <li><span>Inline-block:</span> elemento de blocos em linha. Isto é, irá permitir a alteração tanto da largura quanto da altura de seus elementos (colocando-os em linha).</li>
+            </ul>
+        </article>
+
+        <section class="block">
+            <h3>Block (em bloco)</h3>
+            <div class="bloco pai">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+
+        <section class="inline">
+            <h3>Inline (em linha)</h3>
+            <div class="emLinha pai">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+
+        <section class="inline-block">
+            <h3>Inline-block (Bloco em linha)</h3>
+            <div class="blocoEmLinha pai">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="redes">
+            <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="redes_sociais/face.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fsenai.sp%2F&source=omni_redirect" target="_blank"><img src="redes_sociais/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.youtube.com/channel/UCaz1BMUVug86pd_uS598X1A" target="_blank"><img src="redes_sociais/youtube.png" alt="YouTube" /></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsenaisaopaulo" target="_blank"><img src="redes_sociais/twitter.png" alt="Twitter" /></a>
+            <a href="https://br.linkedin.com/school/senaisp/" target="_blank"><img src="redes_sociais/linkedin.png" alt="Linkedin" /></a>
+            <a href="https://api.whatsapp.com/send?phone=551133220050" target="_blank"><img src="redes_sociais/whatsapp.png" alt="WhatsApp" /></a>
+          </nav>
+          <section class="contato">
+            <p>
+              <span>SENAI Tatuapé - "Frederico Jacob"</span> <br>
+              rua São Jorge, 634 - Tatuapé - São Paulo/SP | CEP 03087-000
+            </p>
+              <p>
+                <span>CENTRAL DE RELACIONAMENTO</span> <br>
+                (11) 2227-8020 (Telefone/WhatsApp) <br>
+                senaimanutencao@sp.senai.br
+              </p>
+          </section>
+          <section class="direitos">
+            <p>
+              Copyright 2025 © Todos os direitos reservados.
+            </p>
+          </section>
+    </footer>
+</body>
+</html>
