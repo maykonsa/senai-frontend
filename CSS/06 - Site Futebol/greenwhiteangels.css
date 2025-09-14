@@ -28,9 +28,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom:0rem 1rem;
     
 
 }   
@@ -57,11 +57,14 @@ body {
 
 
 .menu>div {
-    size: 1.6rem;
     display: flex;
-    margin-top: 1rem;
-    margin-left: 8rem;
+    margin: 0;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 20rem;
+    
+
 
     
 }
@@ -254,8 +257,15 @@ body {
 
 .jogadoras1 {
 
-    margin: 0% 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
+    max-width: 100rem;
+    width: 100%;
+    margin: auto;
 }
 
 .jogadorapadrao {
@@ -383,7 +393,7 @@ body {
     font-size: 6rem;
     border-bottom: 2px solid green;
     width: fit-content;
-    margin: 5rem auto 2rem auto;
+    margin: 2rem auto 2rem auto;
     padding-bottom: 0.5rem;
     text-align: center;
 
@@ -431,6 +441,7 @@ body {
     margin-top: 6rem;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;   
     
@@ -450,13 +461,13 @@ body {
 }
 
 .produtopadrao img {
-    width: 30rem;
+    width: 18rem;
 }
 
 .produtopadrao h4 {
     text-align: left;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .produtopadrao span {
@@ -482,12 +493,12 @@ body {
     margin-top: 4rem;
     background:#156300;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 14.4rem;    
     color: white;
-    gap: 4rem;
+    gap: rem;
     
 }
 
@@ -498,38 +509,38 @@ body {
 
 .campeonato1 {
     background: rgba(0, 0, 0, 0.267);
-    width: 40rem;
+    width: 30rem;
     height: 11.2rem;
     display: flex;
-    justify-content:center;
+    justify-content:start;
     align-items: center;
 }
 
 .campeonato_temporada{
-    width: 40rem;
-    margin:0 4rem;
+    
+    margin:0 2rem;
 }
 
 
 
 .campeonato_temporada h4{
-    font-size: 1.6rem;
+    font-size: 1rem;
 
 
 }
 
 .campeonato_temporada p{
     color: rgb(219, 219, 219);
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
 .campeonato2 {
     background: rgba(0, 0, 0, 0.267);
-    width: 40rem;
+    width: 30rem;
     height: 11.2rem;
     display: flex;
-    justify-content:center;
+    justify-content:start;
     align-items: center;
     
 
@@ -537,10 +548,10 @@ body {
 
 .campeonato3 {
     background: rgba(0, 0, 0, 0.267);
-    width: 40rem;
+    width: 30rem;
     height: 11.2rem;
     display: flex;
-    justify-content:center;
+    justify-content:start;
     align-items: center;
 }
 
@@ -566,7 +577,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 2rem; 
+  gap: 2rem;
+  
 }
 
 .imagem_historia {
@@ -614,17 +626,22 @@ body {
 
 .rodape_informacoes {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background:#115000;
     width: 100%;
-    font-size: 10rem;
+    font-size: 8rem;
     color: white;
-    gap: 10rem;
     padding: 8rem 0;
 
     
     
 }
+
+.rodape_informacoes h4 {
+
+    font-size: 2rem ;
+}
+
 
 
 .rodape_informacoes span a {
@@ -642,14 +659,35 @@ body {
 }
 
 .rodape_informacoes .informacoes3 .informacoes3_2 {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 8rem;
+    column-gap: 0;
+    
 
     
 }
 
 .informacoes1 {
     margin: 1rem;
+}
+
+.informacoes1, .informacoes2, .informacoes3, .informacoes5 {
+        width: 14rem;
+
+}
+
+.informacoes5 img{
+    width: 10rem;
+}
+
+.informacoes4 img{
+    width: 2rem;
+    
+}
+
+.informacoes4 {
+    width: 15rem;
+    
 }
 
 
@@ -806,48 +844,51 @@ h4 {
 
 }
 
-/* @media screen and (max-width: 768px) {
-    
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .menu {
-    width: 100%;
-    height: 7.2rem;
-    
-    flex-direction: column;
-} 
+@media screen and (max-width: 768px) {
 
-    .menu div {
-    width: 100%;
-    height: 7.2rem;
-    flex-direction: column;
-}  
+    
 
-.menu>ul>a {
-    display: flex;
+
+.menu {
+    width: 100%;
+    height: 8rem;
+    padding-bottom: 1rem;
     
-    
-}
+
+}   
+
+
 
 .menu>ul {
-    font-size: 3rem;
-}
+    font-size: 2rem;
 
+
+}
 
 
 
 .menu>div {
-    size: 1.6rem;
+    size: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* ou space-between */
+    align-items: center;
+
+
+    
 }
 
 .menu>div>a>img {
     height: 1.4rem
 }
+
+
+
+    
+   
 
 
 .comeco {
@@ -905,7 +946,7 @@ h4 {
 
 .proximo_jogo .wolfsburg .text{
     order: 1;
-    font-size: 1rem;
+    font-size: 1.6rem;
     
 }
 
@@ -922,12 +963,120 @@ h4 {
 
 .proximo_jogo .oponente .text{
     order:2;
-    font-size: 1rem;
+    font-size: 1.6rem;
 
 }
 
 .proximo_jogo .vs {
+    font-size: 4rem;
+
+    
+}
+
+.titulo_jogadoras25-26 {
+    height: 16rem;
+    font-size: 6rem;
+
+}
+
+.container-jogadoras h3{
+    
+    font-size: 2.6rem;
+    border-bottom: 2px solid green;
+    width: fit-content;
+    margin: 5rem auto 2rem auto;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.classificacao {
+
+}
+
+.campeonato_temporada_classificacao{
     font-size: 2rem;
+    margin-left: 2rem;
+
+}
+
+.wolfs_colocacao{
+    width: 30rem;
+    display:flex;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.wolfs_colocacao h2 {
+    font-size:10rem;
+}
+
+.wolfs_colocacao img {
+    width: 7rem;
+
+}
+
+
+
+
+
+
+
+.titulo_produtos {
+    font-size: 5rem;
+    
+    margin: 4rem auto 2rem auto;
+
+
+}
+
+
+
+
+
+.acessar_loja_oficial a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.produtos {
+    margin-top: 2rem;
+}
+
+
+
+
+.produtopadrao img {
+    width: 10rem;
+}
+
+.produtopadrao h4 {
+
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.premios {
+    margin-top: 4rem;
+    height: 14.4rem;
+    width: 100%;    
+
+    
+}
+
+.premios img {
+    width: 6rem;   
+
 
     
 }
@@ -935,7 +1084,184 @@ h4 {
 
 
 
-} */
+
+
+.campeonato1 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+    
+}
+
+.campeonato_temporada{    
+    margin:0 1rem;
+}
+
+
+
+.campeonato_temporada h4{
+    font-size: 1rem;
+
+
+}
+
+.campeonato_temporada p{
+    color: rgb(219, 219, 219);
+    font-size: 0.8rem;
+    
+
+}
+
+.campeonato2 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+
+    
+
+}
+
+.campeonato3 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+.titulo_historia {
+    font-size: 5rem;
+  
+}
+
+
+
+.historia_imagem_texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.imagem_historia {
+text-align: center;
+
+
+    
+}   
+
+.imagem_historia img {
+    width: 80%;
+
+
+
+ 
+}
+
+.texto_historia {  
+  font-size: 2rem;
+  width: 90%;
+
+}
+
+
+
+
+.rodape_informacoes {
+        
+    font-size: 8rem;
+    padding: 8rem 0;
+    gap: 4rem;
+
+    
+    
+}
+
+.rodape_informacoes h4 {
+
+    font-size: 1.6rem ;
+}
+
+
+
+.rodape_informacoes span a {
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    
+    
+
+}
+
+.rodape_informacoes h3 {
+    
+    font-size: 3rem;
+}
+
+.rodape_informacoes .informacoes3 .informacoes3_2 {
+    font-size: 5rem;
+    margin-top: 8rem;
+    column-gap: 0;
+    
+
+    
+}
+
+.informacoes1 {
+    margin: 1rem;
+}
+
+.informacoes1, .informacoes2, .informacoes3, .informacoes5 {
+        width: 4rem;
+
+}
+
+.informacoes5 {
+    display: none;
+}
+
+.informacoes4 img{
+    width: 1.6rem;
+    
+}
+
+.informacoes4 {
+    width: 5rem;
+    
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+.rodape_final h1{
+
+    font-size: 7rem;
+    color:#156300;
+
+
+    
+}
+
+} 
 
 
 
