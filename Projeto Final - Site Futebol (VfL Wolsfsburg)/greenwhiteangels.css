@@ -619,6 +619,71 @@ body {
 }
 
 
+.rodape_informacoes {
+    display: flex;
+    justify-content: space-evenly;
+    background:#115000;
+    width: 100%;
+    font-size: 8rem;
+    color: white;
+    padding: 8rem 0;
+
+    
+    
+}
+
+.rodape_informacoes h4 {
+
+    font-size: 2rem ;
+}
+
+
+
+.rodape_informacoes span a {
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.rodape_informacoes h3 {
+    margin-bottom: -2rem;
+    
+
+}
+
+.rodape_informacoes .informacoes3 .informacoes3_2 {
+    font-size: 5rem;
+    margin-top: 8rem;
+    column-gap: 0;
+    
+
+    
+}
+
+.informacoes1 {
+    margin: 1rem;
+}
+
+.informacoes1, .informacoes2, .informacoes3, .informacoes5 {
+        width: 14rem;
+
+}
+
+.informacoes5 img{
+    width: 10rem;
+}
+
+.informacoes4 img{
+    width: 2rem;
+    
+}
+
+.informacoes4 {
+    width: 15rem;
+    
+}
 
 
 
