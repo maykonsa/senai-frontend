@@ -1,0 +1,1205 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Anaheim';
+}
+body {
+    color: white;
+    background: rgb(22, 22, 22);
+
+}
+
+
+
+
+
+
+.menu {
+    width: 100%;
+    height: 7.2rem;
+    background: #156300;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:0rem 1rem;
+    
+
+}   
+
+.menu>ul>a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    
+}
+
+.menu>ul {
+    list-style-type: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
+
+.menu>ul>a>li {
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+
+.menu>div {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 20rem;
+    
+
+
+    
+}
+
+.menu>div>a>img {
+    height: 2rem
+}
+
+.menu>div>a>img:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.2);
+
+}
+
+.menu>ul>a>li:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+
+
+
+
+
+
+
+.comeco {
+    
+    width: 100%;
+    height: 80vh;
+    background: url(imagens/foto_principal.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem 10rem 10rem;
+    gap: 10rem;
+
+
+}
+
+.inicio .logo {
+    width: 20rem;
+
+}
+
+.inicio .text {
+    text-align: center;
+    max-width: 100rem;
+
+}
+
+.inicio h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+
+.inicio p {
+
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.inicio p span {
+    color: green;
+
+}
+
+
+
+
+
+
+.proximo_jogo {
+    background:#156300;
+    width: 100%;
+    height: 14.4rem;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proximo_jogo .wolfsburg {
+    width: 30rem;
+    display:flex;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+    
+
+}
+
+.proximo_jogo .wolfsburg img{
+    order: 2;
+    
+}
+
+.proximo_jogo .wolfsburg .text{
+    order: 1;
+    font-size: 2rem;
+    
+}
+
+.proximo_jogo .oponente {
+    width: 30rem;
+    display:flex;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+}
+
+.proximo_jogo .oponente img{
+    order: 1;
+}   
+
+.proximo_jogo .oponente .text{
+    order:2;
+    font-size: 2rem;
+
+}
+
+.proximo_jogo .vs {
+    font-size: 4rem;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo_jogadoras25-26 {
+    width: 100%;
+    height: 16rem;
+    font-size: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-jogadoras::after {
+    content: '';
+    display: block;
+    width: 40%;
+    margin: 3rem auto 0 auto;
+    border-bottom: 0.2rem solid grey;
+}
+
+.container-jogadoras h3{
+    
+    font-size: 3rem;
+    border-bottom: 2px solid green;
+    width: fit-content;
+    margin: 5rem auto 2rem auto;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+
+.jogadoras1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 100rem;
+    width: 100%;
+    margin: auto;
+}
+
+.jogadorapadrao {
+    
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
+}
+
+.jogadorapadrao img {
+    width: 14rem;
+}
+
+.jogadorapadrao h4 {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(2, 190, 2);
+    font-size: 0px;
+}
+
+.jogadoras2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 100rem;
+    width: 100%;
+    margin: auto;
+}
+
+.jogadoras3 {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 100rem;
+    width: 100%;
+    margin: auto;
+}
+
+.jogadoras4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 100rem;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#156300;
+    width: 100%;
+    margin-top: 10rem;
+    color: white;
+}
+
+.campeonato_temporada_classificacao{
+    font-size: 2rem;
+
+}
+
+.wolfs_colocacao{
+    width: 30rem;
+    display:flex;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.wolfs_colocacao h2 {
+    font-size:10rem;
+}
+
+.wolfs_colocacao img {
+    width: 7rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo_produtos {
+    font-size: 6rem;
+    border-bottom: 2px solid green;
+    width: fit-content;
+    margin: 2rem auto 2rem auto;
+    padding-bottom: 0.5rem;
+    text-align: center;
+
+}
+
+.acessar_loja_oficial {
+    margin:0 3rem;
+    height: 6rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.acessar_loja_oficial h4{
+    width: 10rem;
+    background-color: #156300;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.acessar_loja_oficial a {
+    text-decoration: none;
+    color: white;
+}
+
+.acessar_loja_oficial h4:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 202, 0);
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.produtos {
+    margin-top: 6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.produtopadrao {
+    display: inline-block;
+    margin: 0rem 1rem 2rem 3rem ;
+}
+
+.produtopadrao:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+
+
+}
+
+.produtopadrao img {
+    width: 18rem;
+}
+
+.produtopadrao h4 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.produtopadrao span {
+  font-weight: 500;
+}
+
+.produtopadrao:hover h4 {
+    transition: 0.3s;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+.premios {
+    margin-top: 4rem;
+    background:#156300;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 14.4rem;    
+    color: white;
+    gap: rem;
+    
+}
+
+
+
+
+
+
+.campeonato1 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 30rem;
+    height: 11.2rem;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+.campeonato_temporada{
+    
+    margin:0 2rem;
+}
+
+
+
+.campeonato_temporada h4{
+    font-size: 1rem;
+
+
+}
+
+.campeonato_temporada p{
+    color: rgb(219, 219, 219);
+    font-size: 1rem;
+
+}
+
+.campeonato2 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 30rem;
+    height: 11.2rem;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    
+
+}
+
+.campeonato3 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 30rem;
+    height: 11.2rem;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.titulo_historia {
+    font-size: 6rem;
+    border-bottom: 2px solid green;
+    width: fit-content;
+    margin: 5rem auto 2rem auto;
+    padding-bottom: 0.5rem;    
+}
+
+
+
+.historia_imagem_texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  
+}
+
+.imagem_historia {
+
+ 
+}
+
+.texto_historia {
+  width: 40%;  
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.rodape_divisor {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#156300;
+    width: 100%;
+    
+    
+}
+
+.rodape_divisor img{
+
+    width: 12.4rem;
+
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+.rodape_final {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#115000;
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+}
+    
+.rodape_final h1{
+
+    font-size: 14rem;
+    color:#156300 ;
+
+    letter-spacing:.5rem;
+    white-space: nowrap;
+    overflow: hidden
+
+    
+}
+
+
+
+
+
+
+
+#proximo_jogo {
+    scroll-margin-top: 300px;
+}
+
+#classificacao {
+    scroll-margin-top: 300px;
+}
+
+#sessao_jogadoras {
+    scroll-margin-top: 90px;
+}
+
+#loja {
+   scroll-margin-top: 300px; 
+}
+
+#premios {
+   scroll-margin-top: 300px; 
+}
+
+#historia {
+   scroll-margin-top: 100px; 
+
+
+
+
+
+}
+
+.opcao_contato li {
+    background-color: #FFD700;
+    color: black;
+}
+
+.jogadorapadrao figcaption {
+  background-color: rgb(2, 190, 2);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nomejogadora {
+  font-size: 1.5rem; 
+  color: white;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+
+}
+
+figcaption span{
+  font-size: 1.5rem; 
+  color: white;
+  background-color: #156300;
+  padding: 1rem;
+  margin-left: -4rem;
+  font-weight: bold;
+ 
+  
+}
+
+
+.jogadorescalacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+
+header { 
+        display: none;
+    }
+
+
+h1 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;  
+    padding-top: 6rem;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+p {
+    line-height: 4rem; 
+}
+
+h4 {
+    line-height: 3rem; 
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    
+
+
+.menu {
+    width: 100%;
+    height: 8rem;
+    padding-bottom: 1rem;
+    
+
+}   
+
+
+
+.menu>ul {
+    font-size: 2rem;
+
+
+}
+
+
+
+.menu>div {
+    size: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* ou space-between */
+    align-items: center;
+
+
+    
+}
+
+.menu>div>a>img {
+    height: 1.4rem
+}
+
+
+
+    
+   
+
+
+.comeco {
+    width: 100%;
+    height: 70vh;
+
+}
+    
+.inicio {
+    width: 100%;
+    height: 50vh;
+    padding: 0 1rem 10rem 1rem;
+
+
+}
+
+.inicio .logo {
+    width: 10rem;
+
+}
+
+.inicio .text {
+    margin: 1rem;
+    max-width: 20rem;
+
+}
+
+.inicio h1 {
+
+    font-size: 1.4rem;
+}
+
+
+.inicio p {
+
+    font-size: 1rem;
+}
+   
+
+
+
+.proximo_jogo {
+    background:#156300;
+    width: 100%;
+    height: 10rem;
+    color: white;
+    gap: 1rem;
+}
+
+.proximo_jogo .wolfsburg img{
+    order: 2;
+    width: 5rem;
+    
+}
+
+.proximo_jogo .wolfsburg .text{
+    order: 1;
+    font-size: 1.6rem;
+    
+}
+
+.proximo_jogo .oponente {
+    width: 30rem;
+    gap: 1rem;
+
+}
+
+.proximo_jogo .oponente img{
+    order: 1;
+    width: 5rem;
+}   
+
+.proximo_jogo .oponente .text{
+    order:2;
+    font-size: 1.6rem;
+
+}
+
+.proximo_jogo .vs {
+    font-size: 4rem;
+
+    
+}
+
+.titulo_jogadoras25-26 {
+    height: 16rem;
+    font-size: 6rem;
+
+}
+
+.container-jogadoras h3{
+    
+    font-size: 2.6rem;
+    border-bottom: 2px solid green;
+    width: fit-content;
+    margin: 5rem auto 2rem auto;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.classificacao {
+
+}
+
+.campeonato_temporada_classificacao{
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+
+.wolfs_colocacao{
+    width: 30rem;
+    display:flex;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.wolfs_colocacao h2 {
+    font-size:10rem;
+}
+
+.wolfs_colocacao img {
+    width: 7rem;
+
+}
+
+
+
+
+
+
+
+.titulo_produtos {
+    font-size: 5rem;
+    
+    margin: 4rem auto 2rem auto;
+
+
+}
+
+
+
+
+
+.acessar_loja_oficial a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.produtos {
+    margin-top: 2rem;
+}
+
+
+
+
+.produtopadrao img {
+    width: 10rem;
+}
+
+.produtopadrao h4 {
+
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.premios {
+    margin-top: 4rem;
+    height: 14.4rem;
+    width: 100%;    
+
+    
+}
+
+.premios img {
+    width: 6rem;   
+
+
+    
+}
+
+
+
+
+
+
+.campeonato1 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+    
+}
+
+.campeonato_temporada{    
+    margin:0 1rem;
+}
+
+
+
+.campeonato_temporada h4{
+    font-size: 1rem;
+
+
+}
+
+.campeonato_temporada p{
+    color: rgb(219, 219, 219);
+    font-size: 0.8rem;
+    
+
+}
+
+.campeonato2 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+
+    
+
+}
+
+.campeonato3 {
+    background: rgba(0, 0, 0, 0.267);
+    width: 20rem;
+    height: 11.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+.titulo_historia {
+    font-size: 5rem;
+  
+}
+
+
+
+.historia_imagem_texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.imagem_historia {
+text-align: center;
+
+
+    
+}   
+
+.imagem_historia img {
+    width: 80%;
+
+
+
+ 
+}
+
+.texto_historia {  
+  font-size: 2rem;
+  width: 90%;
+
+}
+
+
+
+
+.rodape_informacoes {
+        
+    font-size: 8rem;
+    padding: 8rem 0;
+    gap: 4rem;
+
+    
+    
+}
+
+.rodape_informacoes h4 {
+
+    font-size: 1.6rem ;
+}
+
+
+
+.rodape_informacoes span a {
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    
+    
+
+}
+
+.rodape_informacoes h3 {
+    
+    font-size: 3rem;
+}
+
+.rodape_informacoes .informacoes3 .informacoes3_2 {
+    font-size: 5rem;
+    margin-top: 8rem;
+    column-gap: 0;
+    
+
+    
+}
+
+.informacoes1 {
+    margin: 1rem;
+}
+
+.informacoes1, .informacoes2, .informacoes3, .informacoes5 {
+        width: 4rem;
+
+}
+
+.informacoes5 {
+    display: none;
+}
+
+.informacoes4 img{
+    width: 1.6rem;
+    
+}
+
+.informacoes4 {
+    width: 5rem;
+    
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+.rodape_final h1{
+
+    font-size: 7rem;
+    color:#156300;
+
+
+    
+}
+
+} 
+
+
+
+
+
+
+
+
+

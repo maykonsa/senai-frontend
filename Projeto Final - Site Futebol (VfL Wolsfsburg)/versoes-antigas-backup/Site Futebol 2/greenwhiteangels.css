@@ -1,0 +1,661 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Anaheim';
+}
+
+body {
+    color: white;
+    background: rgb(22, 22, 22);
+
+}
+
+.menu {
+    width: 100%;
+    height: 72px;
+    background: #156300;
+    position: fixed;
+    z-index: 1;
+
+}   
+
+.menu>ul>a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    
+}
+
+.menu>ul {
+    list-style-type: none;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    top: 24px;
+    left: 40%;
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+
+}
+
+.menu>ul>a>li {
+    padding: 4px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+.menu>div {
+    position: absolute;
+    size: 16px;
+    top: 20px;
+    right: 12%;
+    
+}
+
+.menu>div>a>img {
+    height: 24px
+}
+
+.menu>div>a>img:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.2);
+
+}
+
+.menu>ul>a>li:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.inicio .foto_principal {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    
+}
+
+.inicio .logo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 200px;
+}
+
+.inicio h1 {
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.inicio p {
+    position: absolute;
+    right: 13%;
+    top: 56%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.inicio p span {
+    color: green;
+
+}
+
+.proximo_jogo {
+    background:#156300;
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 90%;
+    color: white;
+}
+
+.proximo_jogo .wolfsburg {
+    position: absolute;
+    left: 34%;
+}
+
+.proximo_jogo .wolfsburg img{
+    position: absolute;
+    left: 110%;
+    top: -70%;
+}
+
+.proximo_jogo .wolfsburg, h4 p{
+    position: absolute;
+    top: 40%;
+    
+}
+
+.proximo_jogo .oponente {
+    position: absolute;
+    right: 34%;
+}
+
+.proximo_jogo .oponente img{
+    position: absolute;
+    right: 110%;
+    top: -20%;
+}
+
+.proximo_jogo .oponente, h4 p{
+    position: absolute;
+    top: 40%;
+    
+}
+
+.proximo_jogo .oponente_nome{
+    position: absolute;
+    top: 70%;
+    left: -60%;
+    
+}
+
+.proximo_jogo h3 {
+    position: absolute;
+    left: 49%;
+    top: 40%;
+    
+}
+
+.titulo_jogadoras25-26 {
+    position: absolute;
+    top: 116%;
+    left: 40%;
+    font-size: 30px;
+}
+
+.divisorcinza {
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 50px;
+
+}
+
+.jogadoras1 h3, .jogadoras2 h3, .jogadoras3 h3, .jogadoras4 h3{
+
+    position: absolute;
+    top: -50px;
+    left: 42%;
+    border-bottom: 2px solid green ;
+    font-size: 30px;
+}
+
+.jogadoras3 h3{
+
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    border-bottom: 2px solid green ;
+    font-size: 30px;
+}
+
+.jogadoras4 h3{
+
+    position: absolute;
+    top: -50px;
+    left: 40%;
+    border-bottom: 2px solid green ;
+    font-size: 30px;
+}
+
+.jogadoras1 {
+    position: absolute;
+    top: 135%;
+    margin: 0% 30%;
+    text-align: center;
+}
+
+.jogadorapadrao {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.jogadorapadrao img {
+    width: 140px;
+}
+
+.jogadorapadrao h4 {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(2, 190, 2);
+    font-size: 0px;
+}
+
+.jogadorapadrao .numero {
+    position: relative;
+    left: -30%;
+    background-color: #156300;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.jogadorapadrao .nome {
+    background-color: rgb(2, 190, 2);
+    position: relative;
+    right: 10%;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.jogadoras2 {
+    position: absolute;
+    top: 180%;
+    margin: 0% 20%;
+    text-align: center;
+}
+
+.jogadoras3 {
+    position: absolute;
+    top: 250%;
+    margin: 0% 30%;;
+    text-align: center;
+}
+
+.jogadoras4 {
+    position: absolute;
+    top: 320%;
+    margin: 0% 30%;;
+    text-align: center;
+}
+
+
+.classificacao {
+    background:#156300;
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 380%;
+    color: white;
+}
+
+
+.classificacao .campeonato_temporada{
+   position: relative;
+    left:40%;
+    top:30%;
+    
+}
+
+.classificacao .campeonato_temporada h4{
+    font-size: 20px;
+
+}
+
+.wolfs_colocacao{
+    position: relative;
+    left:60%;
+    top: -30%;
+}
+
+.wolfs_colocacao h2 {
+    font-size:100px;
+    position: relative;
+    right: 5%;
+    top: 1%;
+}
+
+.wolfs_colocacao img {
+    position: absolute;
+    top: 30px;
+}
+
+.acessar_loja_oficial h2 {
+    position: absolute;
+    top: 410%;
+    left: 40%;
+    font-size: 40px;
+    border-bottom: 2px solid rgb(0, 128, 0) ;
+
+}
+
+.acessar_loja_oficial h4 {
+    background-color: #156300;
+    position: absolute;
+    border-radius: 10px;
+    top: 410%;
+    left: 80%;
+    color: white;
+    padding: 10px 40px 10px 40px;
+}
+
+.acessar_loja_oficial a {
+    text-decoration: none;
+    color: white;
+}
+
+.acessar_loja_oficial h4:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 202, 0);
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.produtos {
+    position: absolute;
+    top: 425%;
+    display: inline-block;
+    left: 5%;
+    
+}
+
+.produtopadrao {
+    display: inline-block;
+    margin: 0px 10px 20px 30px ;
+}
+
+.produtopadrao:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+
+
+}
+
+.produtopadrao img {
+    width: 297px;
+}
+
+.produtopadrao h4 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.produtopadrao span {
+  font-weight: 500;
+}
+
+.produtopadrao:hover h4 {
+    transition: 0.3s;
+    color: green;
+}
+
+.premios {
+    background:#156300;
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 490%;
+    color: white;
+    
+}
+
+
+
+.campeonato1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.267);
+    width: 400px;
+    height: 112px;
+}
+
+.premios .campeonato_temporada{
+    display: inline-block;
+    text-align: center;  
+}
+
+
+
+.premios .campeonato_temporada h4{
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+
+
+}
+
+.premios .campeonato_temporada p{
+
+    position: absolute;
+    top: 30px;
+    color: rgb(219, 219, 219);
+
+}
+
+.campeonato2 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background: rgba(0, 0, 0, 0.267);
+    width: 400px;
+    height: 112px;
+}
+
+.campeonato3 {
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    background: rgba(0, 0, 0, 0.267);
+    width: 400px;
+    height: 112px;
+}
+
+.titulo_historia {
+    position: absolute;
+    top: 520%;
+    left: 43%;
+    font-size: 40px;
+    border-bottom: 2px solid rgb(0, 128, 0) ;
+    
+}
+
+.historia_imagem_texto {
+    position: absolute;
+    top: 540%;
+    left: 10%;
+    display: flex;
+
+}
+
+.historia_imagem_texto p {
+    position: absolute;
+    top: 8%;
+    left: 110%;
+    width: 900px;
+    font-size: 20px;
+
+}
+
+
+
+.rodape_divisor {
+    position: absolute;
+    top: 600%;
+    background:#156300;
+    width: 100%;
+    height: 144px;
+    
+}
+
+.rodape_divisor img{
+    position: relative;
+    top: 10%;
+    left: 45%;
+    width: 124px;
+
+}
+
+.rodape_informacoes {
+    position: absolute;
+    top: 616%;
+    background:#115000;
+    width: 100%;
+    height: 392px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+.rodape_informacoes span a {
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.rodape_informacoes .informacoes1 {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    
+}
+
+.rodape_informacoes .informacoes2 {
+    position: relative;
+    top: -10%;
+    left: 25%;
+    
+}
+
+.rodape_informacoes .informacoes3 {
+    position: relative;
+    top: -50%;
+    left: 40%;
+    
+}
+
+.rodape_informacoes .informacoes3 img {
+    width: 30px;
+    
+}
+
+.rodape_informacoes .informacoes4 {
+    position: relative;
+    top: -82%;
+    left: 60%;
+}
+
+.rodape_informacoes .informacoes5 {
+    position: relative;
+    top: -115%;
+    left: 80%;
+}
+
+
+.rodape_final {
+    border-top: 1px solid black;
+    position: absolute;
+    top: 100%;
+    background:#115000;
+    width: 100%;
+    height: 196px;
+    font-size: 20px;
+    color: white;
+}
+    
+.rodape_final h1{
+    display: block;
+    font-size: 140px;
+    color:#156300 ;
+    position: absolute;
+    right: -20%;
+    letter-spacing:5px;
+    white-space: nowrap; /* cancela a quebra de linhas */
+    
+}
+
+#proximo_jogo {
+    scroll-margin-top: 300px;
+}
+
+#classificacao {
+    scroll-margin-top: 300px;
+}
+
+#sessao_jogadoras {
+    scroll-margin-top: 90px;
+}
+
+#loja {
+   scroll-margin-top: 300px; 
+}
+
+#premios {
+   scroll-margin-top: 300px; 
+}
+
+#historia {
+   scroll-margin-top: 100px; 
+}
+
+.opcao_contato li {
+    background-color: #FFD700;
+    color: black;
+}
+
+
+@media print {
+
+header { 
+        display: none;
+    }
+
+
+h1 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;  
+    padding-top: 6rem;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: Arial, 'Helvetica', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+p {
+    line-height: 4rem; 
+}
+
+h4 {
+    line-height: 3rem; 
+}
+
+}
+
+@media screen and (max-width: 480px) {
+        
+}
+
+
+
+
+
+
+
