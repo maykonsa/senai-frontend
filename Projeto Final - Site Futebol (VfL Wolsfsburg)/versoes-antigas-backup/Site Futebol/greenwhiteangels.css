@@ -1,0 +1,224 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Anaheim';
+}
+
+
+
+.menu {
+    width: 100%;
+    height: 72px;
+    background: #156300;
+    
+}
+
+.menu>ul>a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.menu>ul {
+    list-style-type: none;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    top: 24px;
+    left: 40%;
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+
+}
+
+.menu>ul>a>li {
+    padding: 4px 10px;
+}
+
+
+.menu>div {
+    position: absolute;
+    size: 16px;
+    top: 20px;
+    right: 12%;
+    
+}
+
+.menu>div>a>img {
+    height: 24px
+}
+
+.menu>ul>a>li:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.inicio .foto_principal {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    
+}
+
+.inicio .logo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 200px;
+}
+
+.inicio h1 {
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.inicio p {
+    position: absolute;
+    right: 13%;
+    top: 56%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.inicio p span {
+    color: green;
+
+}
+
+.proximo_jogo {
+    background:#156300;
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    top: 90%;
+    color: white;
+}
+
+.proximo_jogo .wolfsburg {
+    position: absolute;
+    left: 20%;
+}
+
+.proximo_jogo .wolfsburg img{
+    position: absolute;
+    left: 110%;
+    top: -70%;
+}
+
+.proximo_jogo .wolfsburg, h4 p{
+    position: absolute;
+    top: 40%;
+
+}
+
+.proximo_jogo .oponente {
+    position: absolute;
+    right: 20%;
+}
+
+.proximo_jogo .oponente img{
+    position: absolute;
+    right: 110%;
+    top: -20%;
+}
+
+.proximo_jogo .oponente, h4 p{
+    position: absolute;
+    top: 40%;
+
+}
+
+.proximo_jogo .oponente_nome{
+    position: absolute;
+    top: 70%;
+    left: -60%;
+
+}
+
+.proximo_jogo h3 {
+    position: absolute;
+    left: 47.5%;
+    top: 40%;
+
+}
+
+.jogadoras .titulos {
+    position: absolute;
+    top: 120%;
+    left: 30%;
+    font-size: 30px;
+}
+
+.jogadoras .titulos h3{
+    position: absolute;
+    top: 140%;
+    border-bottom: 2px solid green;
+    left: 30%;
+    font-size: 30px;
+}
+
+.jogadora1 {
+    position: absolute;
+    left:10%;
+    top: 140%;
+}
+
+.jogadora1 img {
+    width: 140px;
+}
+
+.jogadora1 h4 {
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+.jogadora1 span {
+    text-align: center;
+    padding-left: 10px;
+}
+
+-----
+
+.jogadora2 {
+    position: absolute;
+    margin-left: 49%;
+    top: 140%;
+}
+
+.jogadora2 img {
+    width: 140px;
+}
+
+.jogadora2 h4 {
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+.jogadora2 span {
+    text-align: center;
+    padding-left: 10px;
+}
+
+
