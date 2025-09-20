@@ -109,13 +109,18 @@ li span a {
 
 .video_pao_alho {
     margin-top: 360px;
+   
     background-color: rgb(0, 85, 0);
 
     
 }
 
-.video_youtube_pao_alho {
+
+
+.link_video {
     position: relative;
-    left: 20%;
+    left: 10px;
+    text-align: center;
+
 }
 
